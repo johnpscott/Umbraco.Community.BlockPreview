@@ -1,0 +1,7 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockGridItem<Headline, ColorSettings>>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+
+<h2>@Model.Content.HeadlineText</h2>
+<p>Required tag: '@Model.Content.HeadlineLevel'</p>
+<p>Background: '@Model.Settings.BackgroundColor'</p>
+<p>Foreground: '@Model.Settings.ForegroundColor'</p>

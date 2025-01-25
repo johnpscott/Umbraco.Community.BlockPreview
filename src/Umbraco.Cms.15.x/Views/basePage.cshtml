@@ -1,0 +1,14 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<BasePage>
+@{
+	Layout = null;
+}
+<html>
+	<head>
+		<title>Test BG Preview</title>
+	</head>
+	<body>
+		<h1>@Model.PageTitle</h1>
+		@await Html.GetBlockGridItemsHtmlAsync(Model.GridContent)
+	</body>
+</html>
